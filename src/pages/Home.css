@@ -1,0 +1,212 @@
+/* ---------- HERO ---------- */
+.hero {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: url("https://ecommerce-website-exemple.netlify.app/Images/scandinavian-interior-mockup-wall-decal-background.png") center/cover;
+    height: 500px;
+}
+
+.hero-text {
+    background-color: #fce8c8;
+    padding: 50px;
+    width: 40%;
+    margin-right: 100px;
+    border-radius: 10px;
+}
+
+.hero-text button {
+    background: #b88e2f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* ---------- CATEGORIES ---------- */
+.categories {
+    text-align: center;
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.category-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.category-card {
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card img {
+    width: 270px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 12px;
+
+}
+
+/* ---------- PRODUCTS ---------- */
+.products {
+    text-align: center;
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.products h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.product-card {
+    width: 260px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding-bottom: 15px;
+    text-align: left;
+    position: relative;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0 0 15px;
+}
+
+.product-card p {
+    color: #777;
+    margin: 0 0 5px 15px;
+    font-size: 14px;
+}
+
+.product-card strong {
+    margin-left: 15px;
+    color: #000;
+    font-weight: 600;
+}
+
+
+.product-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: relative;
+    display: block;
+}
+
+.product-btn img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    display: block;
+}
+
+
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+
+
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-btn:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.add-to-cart {
+    background: #fff;
+    border: none;
+    padding: 10px 25px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 15px;
+    border-radius: 4px;
+
+}
+
+.overlay-actions {
+    color: #fff;
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+
+
+.show-more {
+    margin-top: 30px;
+    padding: 10px 25px;
+    border: 1px solid #b88e2f;
+    color: #b88e2f;
+    font-weight: 600;
+    border-radius: 4px;
+
+}
+
+/* ---------- INSPIRATION ---------- */
+.inspiration {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f5f1eb;
+    padding: 60px 0;
+}
+
+.inspiration img {
+    width: 300px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.explore {
+    width: 150px;
+    height: 40px;
+    color: white;
+    background-color: #b88e2f;
+    border: none;
+}
+
+/* ---------- GALLERY ---------- */
+.gallery {
+    text-align: center;
+    padding: 70px 0;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
