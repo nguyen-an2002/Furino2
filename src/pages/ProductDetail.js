@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { CartContext } from "../App";
-import "./ProductDetail.css";
+import "../styles/ProductDetail.css";
 
 function ProductDetail() {
     const { id } = useParams(); // lấy tên sản phẩm từ đường dẫn

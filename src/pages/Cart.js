@@ -1,11 +1,12 @@
 import React, { useContext } from "react";
 import { CartContext } from "../App";
-import "./Cart.css";
+import "../styles/Cart.css";
+import { useNavigate } from "react-router-dom";
 
 function Cart() {
     const { cart, removeFromCart } = useContext(CartContext);
     const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-
+    const navigate = useNavigate();
     return (
         <main className="cart-page">
             <section className="cart-banner">
@@ -46,7 +47,12 @@ function Cart() {
                     <h3>Cart Totals</h3>
                     <p>Subtotal: <span>Rs. {subtotal.toLocaleString()}</span></p>
                     <p>Total: <span className="total">Rs. {subtotal.toLocaleString()}</span></p>
-                    <button className="checkout-btn">Check Out</button>
+                    <button
+                        className="checkout-btn"
+                        onClick={() => navigate("/checkout")}   // ✅ điều hướng đến trang checkout
+                    >
+                        Check Out
+                    </button>
                 </div>
             </div>
         </main>

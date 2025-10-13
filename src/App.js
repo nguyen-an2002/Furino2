@@ -8,7 +8,10 @@ import ProductDetail from "./pages/ProductDetail";
 import Cart from "./pages/Cart";
 import "./App.css";
 import Contact from "./pages/Contact";
+import Comparison from "./pages/Comparison";
+import Checkout from "./pages/Checkout";
 export const CartContext = createContext();
+
 
 function App() {
   const [cart, setCart] = useState(() => {
@@ -48,7 +51,8 @@ function App() {
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/contact" element={<Contact />} />
-
+          <Route path="/comparison" element={<Comparison />} />
+          <Route path="/checkout" element={<Checkout />} />
         </Routes>
         <Footer />
       </Router>

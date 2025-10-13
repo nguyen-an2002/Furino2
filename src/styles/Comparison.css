@@ -1,0 +1,176 @@
+.comparison-page {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #222;
+}
+
+/* Banner */
+.compare-banner {
+    background: url("https://www.furniro.store/assets/images/auth-background.webp") center/cover;
+    text-align: center;
+    padding: 70px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.compare-banner h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.compare-banner p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* TOP SECTION */
+.compare-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 60px 100px;
+    flex-wrap: wrap;
+}
+
+.compare-left {
+    flex: 1;
+    min-width: 220px;
+}
+
+.compare-left h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.view-more {
+    background: none;
+    border: none;
+    color: #666;
+    font-weight: 600;
+    border-bottom: 2px solid #b88e2f;
+    padding-bottom: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.view-more:hover {
+    color: #b88e2f;
+}
+
+/* CENTER */
+.compare-center {
+    display: flex;
+    gap: 30px;
+    flex: 2;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background: #fdfaf5;
+    border-radius: 10px;
+    padding: 15px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
+.price {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.rating {
+    font-size: 14px;
+    color: #333;
+}
+
+.rating .review {
+    margin-left: 5px;
+    color: #888;
+    font-size: 13px;
+}
+
+/* RIGHT */
+.compare-right {
+    flex: 1;
+    text-align: left;
+    min-width: 220px;
+}
+
+.compare-right h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.dropdown select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #b88e2f;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='20' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M5 8l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+.dropdown select:hover {
+    background-color: #a57d26;
+}
+
+/* TABLE SECTION */
+.compare-table {
+    padding: 40px 100px 80px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+}
+
+th {
+    background: #fafafa;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.add-btn {
+    background: #b88e2f;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.add-btn:hover {
+    background: #a57d26;
+}

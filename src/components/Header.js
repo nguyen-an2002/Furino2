@@ -77,7 +77,16 @@ function Header() {
                                 >
                                     Checkout
                                 </button>
-                                <button className="mini-btn compare">Comparison</button>
+                                <button
+                                    className="mini-btn compare"
+                                    onClick={() => {
+                                        setShowMiniCart(false);
+                                        navigate("/comparison");
+                                    }}
+                                >
+                                    Comparison
+                                </button>
+
                             </div>
                         </>
                     )}
